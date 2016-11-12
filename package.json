@@ -1,7 +1,7 @@
 {
   "name": "hw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Building the front-end for a new site called \"Thoughter\". This is a Single Page Application utilizing Bootstrap, JQuery dependencies, Grunt , etc..",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,19 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2"
-  }
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJL1984/Thoughter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TJL1984/Thoughter/issues"
+  },
+  "homepage": "https://github.com/TJL1984/Thoughter#readme"
 }

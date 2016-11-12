@@ -3,36 +3,33 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Thoughter</title>
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <style>
-      main {
-        width: 80%;
-        margin: 1em auto;
-      }
-    </style>
+    <title>Doc</title>
+    <link href='..node_modules/mocha/mocha.css' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body>
-    <header class='page-header'>
-      <h1>
-        <i class='glyphicon glyphicon-bullhorn'></i>
-        Thoughter
-      </h1>
-      <h2>The Brainshare Network</h2>
-    </header>
+    <main id='mocha'></main>
 
-    <nav>
-      <ul class='nav nav-tabs'>
-        <li><a href='recent-thoughts'>Recent Thoughts</a></li>
-        <li><a href='new-thoughts'>New Thoughts</a></li>
-      </ul>
-    </nav>
 
-    <script>'node_modules/jquery/dist/jquery.js'</script>
-    <script>'js/data.js'</script>
-    <script>'js/ui.js'</script>
-    <script>'js/thoughter.js'</script>
+    <script src='../node_modules/mocha/mocha.js'></script>
+    <script src='../node_modules/chai/chai.js'></script>
+    <script src='../node_modules/jquery/dist/jquery.js'></script>
+
+    <script>
+      mocha.setup('bdd');
+    </script>
+
+    <script src='../src/js/thougthernav.js'></script>
+    <script src='../src/js/thoughterdata.js'></script>
+    <script src='../src/js/thoughterui.js'></script>
+    <script src='../specs/thoughterdata.spec.js'></script>
+    <script src='../specs/thoughterui.spec.js'></script>
+
+    <script>
+      mocha.run();
+    </script>
+
   </body>
 
 </html>
